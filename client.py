@@ -6,6 +6,8 @@ class Blockchain(object):
     def new_block(self):
         #should create a new block and add it to chain
         return
+    def helloworld(self):
+        print("Hello World")
     
     def new_transaction(self,sender,recipient,amount):
         """
@@ -30,3 +32,5 @@ class Blockchain(object):
     def last_block(self):
         #returns the last block in the chain
         return
+
+Blockchain().helloworld()
