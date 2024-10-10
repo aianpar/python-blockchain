@@ -5,14 +5,28 @@ class Blockchain(object):
 
     def new_block(self):
         #should create a new block and add it to chain
+        return
     
-    def new_transaction(self):
-        #adds a new transaction to the list of current transactions
+    def new_transaction(self,sender,recipient,amount):
+        """
+        sender:<str>
+        recipient: <str>
+        amount: <int>
+        return: <int>
+        """
+        self.current_transaction.append({
+            'sender':sender,
+            'recipient':recipient,
+            'amount': amount,
+        })
+        return self.last_block['index']+1
     
     @staticmethod
     def hash(block):
-        #hashinh
+        #hashing
+        return
 
     @property
     def last_block(self):
         #returns the last block in the chain
+        return
